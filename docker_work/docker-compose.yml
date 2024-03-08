@@ -1,0 +1,13 @@
+version: '4'
+services:
+  python-minimal:
+    image: jupyter/minimal-notebook:latest
+    container_name: python-minimal
+    hostname: pythonminimal
+    restart: unless-stopped
+    ports:
+      - 8888:8888
+    volumes:
+      - /home/hazem/docker_work/Code/:/home/jovyan/work
+    
+
